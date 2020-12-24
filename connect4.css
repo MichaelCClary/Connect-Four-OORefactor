@@ -1,0 +1,76 @@
+body {
+  background-color: #b1d9fc;
+  color: rgba(255, 156, 26, 1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #b1d9fc;
+  color: rgba(255, 156, 26, 1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  border: solid 1px #666;
+  border-radius: 10%;
+  padding: .25rem;
+}
+
+button:hover {
+  background-color:#1741ff;
+  box-shadow: 1px 1px;
+}
+
+input {
+  margin: 10px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 90%;
+  border: solid 1px #666;
+
+  animation-name: dropdown;
+  animation-duration: 1.5s;
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-400px)
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px rgb(70, 68, 68);
+}
+
+#column-top td:hover {
+  background-color: rgba(255, 156, 26, 1);
+}
