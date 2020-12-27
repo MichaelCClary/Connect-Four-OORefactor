@@ -8,8 +8,8 @@ class Game {
   constructor(p1, p2) {
     this.p1 = p1;
     this.p2 = p2;
-    this.HEIGHT = 7;
-    this.WIDTH = 6;
+    this.HEIGHT = 6;
+    this.WIDTH = 7;
     this.currPlayer = p1;
     this.makeBoard();
     this.makeHtmlBoard();
